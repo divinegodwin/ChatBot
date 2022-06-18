@@ -26,7 +26,7 @@ const humanReplyGreet = [...botReplyGreet]
 
 
 sendBtn.addEventListener("click",()=>{
-  
+  if(input.value != ""){
 setTimeout(()=>{
   
 
@@ -71,7 +71,7 @@ else if(botReplyQuestions.includes(input.value)){
    
    }, 2000)
  }
-
+}
 })
 
 
@@ -131,5 +131,25 @@ window.onload =()=>{
   reply.innerHTML = "good morning";
   
     },1000)
+    
+  }
+  else if((time>=12 ) && (time<16)){
+    setTimeout(() => {
+      let reply = document.createElement("div");
+      container.appendChild(reply);
+      reply.classList.add("bot-message")
+      reply.innerHTML = "Good Afternoon";
+    
+    }, 1000)
+    
+  }
+  else if((time>=15 ) && (time<24)){
+    setTimeout(() => {
+      let reply = document.createElement("div");
+      container.appendChild(reply);
+      reply.classList.add("bot-message")
+      reply.innerHTML = "Good Evening";
+    
+    }, 1000)
   }
 }
