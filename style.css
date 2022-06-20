@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -6,69 +6,71 @@
 
 
 body {
-    font-size: 15pt;
-   width: 100%;
-}
-#container{
- overflow-x: hidden;
- overflow-y: auto;
- width: 100%;
- 
-}
-#nav{
+  font-size: 15pt;
   width: 100%;
-  height:3.5rem;
- 
-  box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
- background-color: #fff;
- position: fixed;
 }
 
-.active-circle{
+#container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+
+}
+
+#nav {
+  width: 100%;
+  height: 3.5rem;
+
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  position: fixed;
+}
+
+.active-circle {
   width: 10px;
   height: 10px;
   background-color: #51ca31;
   border-radius: 50px;
- 
+
   border: 2px solid #fff;
 }
 
-.nav-heading{
- margin-left: 1rem;
- font-size: 30px;
- font-weight: 500;
- margin-top: 2rem;
- color: #FFAE42;
- font-family: 'Poppins', sans-serif;
+.nav-heading {
+  margin-left: 1rem;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 2rem;
+  color: #FFAE42;
+  font-family: 'Poppins', sans-serif;
 }
 
-.active-container{
+.active-container {
   display: flex;
   padding: 14px;
   margin-top: 0rem;
   color: #000;
   font-size: 13px;
   margin-top: -12px;
-  
+
 }
 
-#input-container{
+#input-container {
   position: fixed;
   bottom: 0;
   margin-bottom: 0.;
-  box-shadow: 1px 0px 1px rgba(0,0,0,0.12);
+  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.12);
   width: 100%;
   height: 60px;
   display: flex;
-  flex-direction:row;
-  padding:16px;
+  flex-direction: row;
+  padding: 16px;
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
 }
 
-.input{
+.input {
   width: 280px;
-  margin-left:0.2rem;
+  margin-left: 0.2rem;
   height: 40px;
   border: 1px solid #bdc2c5;
   padding: 5px;
@@ -78,15 +80,15 @@ body {
   margin-top: -0.4rem;
   font-family: 'Roboto', sans-serif;
   overflow-wrap: break-word;
- 
+
 }
 
-.input:focus{
+.input:focus {
   box-shadow: 0px 0px 6px #FFAE42;
   border: none;
 }
 
-.send{
+.send {
   border: none;
   outline: none;
   width: 50px;
@@ -95,7 +97,7 @@ body {
   margin-left: 0.2rem;
 }
 
-.info{
+.info {
   float: right;
   margin-top: -3.2rem;
   margin-right: 2rem;
@@ -104,39 +106,107 @@ body {
   background: transparent;
 }
 
-#messages-container{
- padding-top: 4rem;
+#messages-container {
+  padding-top: 4rem;
 }
 
-.user-message{
+.user-message {
   margin-right: 1rem;
-  margin-top:1rem;
+  margin-top: 1rem;
   margin-left: 19rem;
   word-wrap: break-word;
- max-width: 80%;
- background-color:#FFAE42;
- color: #fff;
- padding: 12px;
- font-size: 14px;
- border-top-right-radius: 10px;
- border-bottom-left-radius: 10px;
- width:max-content;
- float: right;
+  max-width: 80%;
+  background-color: #FFAE42;
+  color: #fff;
+  padding: 12px;
+  font-size: 14px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: max-content;
+  float: right;
 
 }
 
-.bot-message{
-  width:max-content;
-  background-color:#f0f0f0;
+.bot-message {
+  width: max-content;
+  background-color: #f0f0f0;
   color: #000;
-  border-top-right-radius:  10px;
-  border-bottom-left-radius:  10px;
-  max-width:80%;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  max-width: 80%;
   padding: 12px;
   margin-top: 1rem;
   margin-left: 1rem;
   word-wrap: break-word;
   font-size: 13px;
   float: left;
- 
+}
+
+#authentication{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 3rem;
+  position: relative;
+  height:250px;
+  background-color: #fff;
+  margin-top: 9rem;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+input{
+  width:200px;
+  height:30px;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  border: none;
+  border: 1px solid #bdc2c5;
+  outline: none;
+  padding: 4px;
+}
+
+input:focus{
+  box-shadow: 0px 0px 5px #FFAE42;
+  border: none;
+}
+
+.auth-btn{
+  width: 200px;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  color: #fff;
+  background-color: #FFAE42;
+  outline: none;
+}
+
+.authentication{
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  margin-left: 1.5rem;
+}
+
+
+#display-pass{
+  display: flex;
+  flex-direction: row;
+}
+
+.auth-text-error{
+  color: red;
+  display: none;
+  font-size: 10px;
+  margin-left: 2rem;
+  margin-top: 0.2rem;
+}
+
+.auth-password-error{
+  color: red;
+  display: none;
+  font-size: 10px;
+  margin-left: 2rem;
+  margin-top: 0.2rem;
 }
